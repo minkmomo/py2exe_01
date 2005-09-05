@@ -1,0 +1,37 @@
+py2exe 0.6.1 released
+=====================
+
+py2exe is a Python distutils extension which converts python scripts
+into executable windows programs, able to run without requiring a
+python installation.  Console and Windows (GUI) applications, windows
+NT services, exe and dll COM servers are supported.
+
+Changes in this release:
+
+    * py2exe can now bundle binary extensions and dlls into the
+      library-archive or the executable itself.  This allows to
+      finally build real single-file executables.
+
+      The bundled dlls and pyds are loaded at runtime by some special
+      code that emulates the Windows LoadLibrary function - they are
+      never unpacked to the file system.
+
+      This part of the code is distributed under the MPL 1.1, so this
+      license is now pulled in by py2exe.
+      
+    * By default py2exe now includes the codecs module and the
+      encodings package.
+      
+    * Several other fixes.
+
+Homepage:
+
+    <http://starship.python.net/crew/theller/py2exe>
+
+Download from the usual location:
+
+    <http://sourceforge.net/project/showfiles.php?group_id=15583>
+
+Enjoy,
+
+Thomas
