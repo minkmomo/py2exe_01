@@ -1,0 +1,3 @@
+include MANIFEST.in ANNOUNCE
+recursive-include source *.h *.c *.ico *.rc *.py *.txt
+recursive-include docs *.txt *.css *.html *.py
